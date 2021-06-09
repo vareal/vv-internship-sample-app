@@ -118,12 +118,11 @@ Rails.application.configure do
   # config.active_record.database_resolver = ActiveRecord::Middleware::DatabaseSelector::Resolver
   # config.active_record.database_resolver_context = ActiveRecord::Middleware::DatabaseSelector::Resolver::Session
   config.action_mailer.smtp_settings = {
-    :domain               => ENV['SMTP_DOMAIN'],
-    :address              => ENV['SMTP_ADDRESS'],
+    :address              => "smtp.gmail.com",
     :port                 => 587,
-    :user_name            => ENV['SMTP_USERNAME'],
-    :password             => ENV['SMTP_PASSWORD'],
-    :authentication       => 'plain',
+    :user_name            => ENV['CONTACT_EMAIL_USER_NAME'],
+    :password             => ENV['CONTACT_EMAIL_PASSWORD'],
+    :authentication       => "plain",
     :enable_starttls_auto => true
   }
 end
