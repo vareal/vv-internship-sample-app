@@ -1,0 +1,6 @@
+<% if @feed_items.any? %>
+  <ol class="microposts">
+    <%= render collection: @feed_items, partial: "users/micropost" %>
+  </ol>
+  <%= paginate @feed_items, theme: "twitter-bootstrap-4" %>
+<% end %>
