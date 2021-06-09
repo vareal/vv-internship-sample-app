@@ -21,7 +21,7 @@ set :deploy_to, "/var/www/sample_app"
 set :pty, true
 
 # Default value for :linked_files is []
-append :linked_files, 'config/database.yml', 'config/master.key'
+append :linked_files, 'config/database.yml', 'config/master.key', 'db/staging.sqlite3'
 
 # Default value for linked_dirs is []
 append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', '.bundle', 'public/system', 'public/uploads'
