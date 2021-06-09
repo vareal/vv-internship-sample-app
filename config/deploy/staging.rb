@@ -1,4 +1,4 @@
-set :branch, ENV.fetch('BRANCH', 'develop')
+set :branch, ENV.fetch('BRANCH', 'main')
 set :stage, :staging
 set :rails_env, :staging
 set :puma_env, :staging
